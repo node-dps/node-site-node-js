@@ -1,0 +1,24 @@
+{
+  "name": "site-node",
+  "version": "1.0.0",
+  "description": "nodeclub.xyz",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/node-dps/node-site-node-js.git"
+  },
+  "keywords": [
+    "EJS",
+    "Express",
+    "nodejs"
+  ],
+  "author": "Rahul Batra 2019",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/node-dps/node-site-node-js/issues"
+  },
+  "homepage": "https://github.com/node-dps/node-site-node-js#readme"
+}
