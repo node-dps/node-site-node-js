@@ -1,0 +1,10 @@
+sass ~/documents/node-site/assets/sass/_vars.scss ~/documents/node-site-node-js/public/css/_vars.css 
+sass ~/documents/node-site/assets/sass/alphanode.scss ~/documents/node-site-node-js/public/css/alphanode.css
+sass ~/documents/node-site/assets/sass/dashboard.scss ~/documents/node-site-node-js/public/css/dashboard.css
+sass ~/documents/node-site/assets/sass/footer.scss ~/documents/node-site-node-js/public/css/footer.css
+sass ~/documents/node-site/assets/sass/_profile_cards.scss ~/documents/node-site-node-js/public/css/_profile_cards.css
+sass ~/documents/node-site/assets/sass/achievements.scss ~/documents/node-site-node-js/public/css/achievements.css
+sass ~/documents/node-site/assets/sass/alumni.scss ~/documents/node-site-node-js/public/css/alumni.css
+sass ~/documents/node-site/assets/sass/error_page.scss ~/documents/node-site-node-js/public/css/error_page.css
+sass ~/documents/node-site/assets/sass/form.scss ~/documents/node-site-node-js/public/css/form.css
+sass ~/documents/node-site/assets/sass/navbar.scss ~/documents/node-site-node-js/public/css/navbar.css

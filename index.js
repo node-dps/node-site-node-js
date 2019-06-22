@@ -14,17 +14,26 @@ app.get('/403', function(req, res, next) {
     err.status = 403;
     next(err);
 });
+
+//Define Routes for the router to read
+//Since I don't use a middleware for hand-off the complilation has to be perfect everytime
 app.get('/', (req, res) => res.render('pages/index'))
+app.get('/team', (req, res) => res.render('pages/team'))
+app.get('/alphanode', (req, res) => res.render('pages/alphanode'))
+app.get('/alumni', (req, res) => res.render('pages/alumni'))
+app.get('/achievements', (req, res) => res.render('pages/achievements'))
 app.get('/500', function(req, res, next) {
     // trigger a generic (500) error
     next(new Error('keyboard cat!'));
 });
 
-// Error handlers
+// Error handlers 
+//Check on a Darwin Compliant Terminal
 // $ curl http://localhost:3000/notfound
 // $ curl http://localhost:3000/notfound -H "Accept: application/json"
 // $ curl http://localhost:3000/notfound -H "Accept: text/plain"
 
+//Oopsie 404 error happens
 app.use(function(req, res, next) {
     res.status(404);
 
@@ -46,12 +55,6 @@ app.use(function(req, res, next) {
 // arity of 4, aka the signature (err, req, res, next).
 // when connect has an error, it will invoke ONLY error-handling
 // middleware.
-
-// If we were to next() here any remaining non-error-handling
-// middleware would then be executed, or if we next(err) to
-// continue passing the error, only error-handling middleware
-// would remain being executed, however here
-// we simply respond with an error page.
 /* 
 What is fucking confusing is the fact that pratyush doesnt even convert scss pages into css primarily using vue's render engine
 to render this out which presents a problem because i only use ejs and express and hate using mark down due to arbitrary buffer 
@@ -71,7 +74,7 @@ app.use(function(err, req, res, next) {
     res.status(err.status || 500);
     res.render('500', { error: err });
 });
-
+//start the server
 
 if (!module.parent) {
     app.listen(3000);
